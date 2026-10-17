@@ -214,59 +214,6 @@ Start with **selected crops in one region**, onboard FPOs and buyers, then **exp
 
 > Proposed features and impact require prototype and pilot validation.
 
-## Getting Started
-
-> Update the commands below to match your actual folder names and scripts.
-
-### Prerequisites
-
-- Node.js (LTS)
-- Python 3.10+
-- PostgreSQL
-- Docker (optional, for containerised setup)
-
-### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>
-
-# Frontend
-cd frontend
-npm install
-npm run dev
-
-# Backend (Node.js / Express)
-cd ../backend
-npm install
-npm start
-
-# AI services (FastAPI)
-cd ../ai-service
-pip install -r requirements.txt
-uvicorn main:app --reload
-```
-
-### Environment variables
-
-Create a `.env` file in each service and set values such as:
-
-```env
-DATABASE_URL=
-JWT_PRIVATE_KEY=
-JWT_PUBLIC_KEY=
-SMS_API_KEY=
-MAPS_API_KEY=
-WEATHER_API_KEY=
-WHATSAPP_API_KEY=
-```
-
-### Run with Docker
-
-```bash
-docker compose up --build
-```
 
 ## Project Structure
 
